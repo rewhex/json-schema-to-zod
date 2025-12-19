@@ -17,6 +17,7 @@
     }
   },
   "scripts": {
+    "prepare": "npm run build",
     "build:types": "tsc -p tsconfig.types.json",
     "build:cjs": "tsc -p tsconfig.cjs.json && node postcjs.js",
     "build:esm": "tsc -p tsconfig.esm.json && node postesm.js",
